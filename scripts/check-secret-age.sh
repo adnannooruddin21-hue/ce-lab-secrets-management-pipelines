@@ -3,7 +3,7 @@ set -euo pipefail
  
 SECRET_NAME="${1:?Usage: $0 <secret-name> [max-age-days]}"
 MAX_AGE_DAYS="${2:-90}"
-AWS_REGION="${AWS_REGION:-us-east-1}"
+AWS_REGION="${AWS_REGION:-eu-north-1}"
  
 echo "Checking rotation age for: $SECRET_NAME"
 echo "Maximum allowed age: $MAX_AGE_DAYS days"
